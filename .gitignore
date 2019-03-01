@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# microsoft garbage
+presentation/~$marihacks2019-presentation-withnotes.pptx
