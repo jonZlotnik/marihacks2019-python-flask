@@ -1,6 +1,6 @@
 # -------------------------------- #
-#   Riddle Game v2 (Itteration)
-#   File I/O, For-loops
+#   Riddle Game v3 (Refactoring)
+#   Functions
 #   By: Jon Zlotnik
 # -------------------------------- #
 
