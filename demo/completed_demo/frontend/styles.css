@@ -1,0 +1,39 @@
+body
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#titleWrapper
+{
+    width: 100%;
+    text-align: center;
+}
+
+#riddleWrapper
+{
+    max-width: 600px;
+    width: 100%;
+}
+#answerSumbissionWrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 25px;
+}
+#answerSumbissionWrapper input {
+    flex: 1 1 auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#answerCorrect{ display: none; }
+#answerIncorrect{ display: none; }
+
+#pastAnswersWrapper
+{
+    display: none;
+    max-width: 600px;
+    width: 100%;
+}

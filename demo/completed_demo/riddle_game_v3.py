@@ -8,40 +8,40 @@ user_answers_filename = "user_answers.txt"
 
 
 def get_riddle():
-    # riddle = "What lie has everybody told to some of the largest organizations in the world?"
-    # return f"\n{riddle}"
+    riddle = "What lie has everybody told to some of the largest organizations in the world?"
+    return f"\n{riddle}"
 
 
 def get_correct_answer():
-    # correct_answer = "I have read and agree to the Terms & Conditions."
-    # return correct_answer
+    correct_answer = "I have read and agree to the Terms & Conditions."
+    return correct_answer
 
 
 def cli_get_user_answer():
-    # user_input = input(" >> ")
-    # return user_input
+    user_input = input(" >> ")
+    return user_input
 
 
 def append_user_answer_to_file(filename, answer):
-    # with open(user_answers_filename, 'a') as user_answers_file:
-    #     user_answers_file.write(f"{answer}\r")
+    with open(user_answers_filename, 'a') as user_answers_file:
+        user_answers_file.write(f"{answer}\r")
 
 
 def check_answer(answer, correct_answer):
-    # if answer == correct_answer:
-    #     return True
-    # else:
-    #     return False
+    if answer == correct_answer:
+        return True
+    else:
+        return False
 
 
 def get_past_answers_from_file(filename):
-    # with open(user_answers_filename, 'r') as user_answers:
-    #     past_answers = user_answers.readlines()
-    #     past_answers.reverse()
-    #     for answer in past_answers:
-    #         answer.replace("\\n", "")
-    #     past_answers = list(dict.fromkeys(past_answers))
-    # return past_answers
+    with open(user_answers_filename, 'r') as user_answers:
+        past_answers = user_answers.readlines()
+        past_answers.reverse()
+        for answer in past_answers:
+            answer.replace("\\n", "")
+        past_answers = list(dict.fromkeys(past_answers))
+    return past_answers
 
 
 if __name__ == "__main__":
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         print("Correct!!!")
     else:
         print("Incorrect.")
-
+    
     # 6. Computer shows past user attempts at the riddle.
     print("\nPrevious answers given:")
     print(get_past_answers_from_file(user_answers_filename))

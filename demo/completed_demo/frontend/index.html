@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>The Riddle Game</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+
+        <div id="titleWrapper">
+            <h1>The Riddle Game</h1>
+            <h4>mariHacks2019</h4>
+            <hr>
+
+        </div>
+
+        <div id="riddleWrapper" class="well">
+            <h3 id="riddleText">Loading your riddle...</h3>
+            <div id="answerSumbissionWrapper">
+                <input id="userAnswer" type="text" name="riddleAnswer" value="" placeholder="Enter answer here..." />
+                <button id="submitBTN" class="btn btn-success" type="button" name="button">Submit!</button>
+            </div>
+            <div id="answerCorrect" class="alert alert-success">Correct!</div>
+            <div id="answerIncorrect" class="alert alert-danger">Incorrect.</div>
+        </div>
+
+        <div id="pastAnswersWrapper" class="well">
+
+        </div>
+
+    </body>
+</html>

@@ -4,21 +4,13 @@
 #   By: Jon Zlotnik
 # -------------------------------- #
 
-# Some initial variables
-riddle = "What lie has everybody in this room told to some of the largest organizations in the world?"
-correct_answer =  "I have read and agree to the Terms & Conditions."
+# Initial variables: riddle, correct answer
 
 
-# Computer asks user a riddle
-print(riddle)
+# Computer asks user the riddle
 
 
 # User inputs an answer.
-user_input = input(" >> ")
 
 
 # Computer checks answer against correct answer and tells the user how they did.
-if user_input == correct_answer:
-    print("Correct!!!")
-else:
-    print("Incorrect.")
